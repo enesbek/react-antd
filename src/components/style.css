@@ -1,0 +1,14 @@
+.login-form {
+  text-align: center;
+}
+
+.login-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.errorMessage {
+  margin-bottom: 20px;
+  color: red;
+}

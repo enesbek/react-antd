@@ -1,10 +1,7 @@
-import React from "react";
 import type { MenuProps } from "antd";
-import { Layout, Menu, theme, Divider } from "antd";
-import { CompanyTable } from "./home/CompanyTable";
-import { LastAddedCompanies } from "./home/LastAddedCompanies";
-import { Statistics } from "./home/Statistics";
+import { Layout, Menu, theme } from "antd";
 import { useNavigate } from "react-router-dom";
+import ProductTables from "./ProductTables";
 
 const { Header, Content, Footer } = Layout;
 
@@ -42,7 +39,7 @@ export const Products = () => {
       <Content style={{ padding: "0 50px" }}>
         <Layout style={{ padding: "24px 0", background: colorBgContainer }}>
           <Content style={{ padding: "0 24px", minHeight: 280 }}>
-            Products
+            <ProductTables />
           </Content>
         </Layout>
       </Content>

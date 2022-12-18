@@ -1,0 +1,82 @@
+[
+  {
+    "Id": 1,
+    "Product_Name": "iPhone 9",
+    "Price": 549,
+    "Stock": 94,
+    "Company": "Apple",
+    "Category": "smartphones"
+  },
+  {
+    "Id": 2,
+    "Product_Name": "iPhone X",
+    "Price": 899,
+    "Stock": 34,
+    "Company": "Apple",
+    "Category": "smartphones"
+  },
+  {
+    "Id": 3,
+    "Product_Name": "Samsung Universe 9",
+    "Price": 1249,
+    "Stock": 36,
+    "Company": "Samsung",
+    "Category": "smartphones"
+  },
+  {
+    "Id": 4,
+    "Product_Name": "OPPOF19",
+    "Price": 280,
+    "Stock": 123,
+    "Company": "OPPO",
+    "Category": "smartphones"
+  },
+  {
+    "Id": 5,
+    "Product_Name": "Huawei P30",
+    "Price": 499,
+    "Stock": 32,
+    "Company": "Huawei",
+    "Category": "smartphones"
+  },
+  {
+    "Id": 6,
+    "Product_Name": "MacBook Pro",
+    "Price": 1749,
+    "Stock": 83,
+    "Company": "APPle",
+    "Category": "laptops"
+  },
+  {
+    "Id": 7,
+    "Product_Name": "Samsung Galaxy Book",
+    "Price": 1499,
+    "Stock": 50,
+    "Company": "Samsung",
+    "Category": "laptops"
+  },
+  {
+    "Id": 8,
+    "Product_Name": "Microsoft Surface Laptop 4",
+    "Price": 1499,
+    "Stock": 68,
+    "Company": "Microsoft Surface",
+    "Category": "laptops"
+  },
+  {
+    "Id": 9,
+    "Product_Name": "Infinix INBOOK",
+    "Price": 1099,
+    "Stock": 96,
+    "Company": "Infinix",
+    "Category": "laptops"
+  },
+  {
+    "Id": 10,
+    "Product_Name": "HP Pavilion 15-DK1056WM",
+    "Price": 1099,
+    "Stock": 89,
+    "Company": "HP Pavilion",
+    "Category": "laptops"
+  }
+]

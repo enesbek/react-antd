@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./components/Login";
 import { Register } from "./components/Register";
 import { Home } from "./components/home/Home";
-import { Products } from "./components/Products";
+import { Products } from "./components/products/Products";
 import { Companies } from "./components/companies/Companies";
 
 function App() {

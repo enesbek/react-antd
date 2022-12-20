@@ -1,5 +1,5 @@
-import React from "react";
-import { Space, Table, Tag } from "antd";
+import React, { useEffect, useState } from "react";
+import { Table } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import CompanyData from "../../companyData.json";
 
@@ -22,16 +22,18 @@ const columns: ColumnsType<DataType> = [
   },
 ];
 
-const last3Company = CompanyData.slice(
-  CompanyData.length - 3,
-  CompanyData.length
-);
-const data: DataType[] = last3Company;
-
 export const LastAddedCompanies = () => {
+  
+  const last3Company = CompanyData.slice(
+    CompanyData.length - 3,
+    CompanyData.length
+  );
+  
+  const data: DataType[] = last3Company;
+
   return (
     <div>
-      <Table columns={columns} dataSource={data} pagination={false} />
+      <Table columns={columns} dataSource={[...data]} pagination={false} />
     </div>
   );
 };

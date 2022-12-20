@@ -129,7 +129,7 @@ const ProductTables: React.FC = () => {
     setEditingKey(0);
   };
 
-  const addNewCompany = () => {
+  const addNewProduct = () => {
     const newData = [...data];
     const lastId = ProductsData[ProductsData.length - 1].Id + 1;
     newData.push({ Id: lastId, ...{} } as Product);
@@ -242,8 +242,8 @@ const ProductTables: React.FC = () => {
           onChange: cancel,
         }}
       />
-      <Button type="primary" onClick={addNewCompany}>
-        Add New Company
+      <Button type="primary" onClick={addNewProduct}>
+        Add New Product
       </Button>
     </Form>
   );

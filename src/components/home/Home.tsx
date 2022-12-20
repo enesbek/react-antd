@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useReducer } from "react";
 import type { MenuProps } from "antd";
 import { Layout, Menu, theme, Divider } from "antd";
 import { CompanyTable } from "./CompanyTable";
 import { LastAddedCompanies } from "./LastAddedCompanies";
 import { Statistics } from "./Statistics";
 import { useNavigate } from "react-router-dom";
+import { UseAppSelector } from "../../store";
+import { useSelector } from "react-redux";
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,6 +18,7 @@ const navItems: MenuProps["items"] = ["Home", "Companies", "Products"].map(
 );
 
 export const Home = () => {
+  const user = UseAppSelector((state) => state.user)
   const navigate = useNavigate();
   const {
     token: { colorBgContainer },
@@ -24,6 +27,7 @@ export const Home = () => {
   const menuClick = (goTo: string) => {
     navigate("/" + goTo.toLowerCase());
   };
+  console.log(user)
 
   return (
     <Layout>

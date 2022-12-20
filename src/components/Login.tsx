@@ -1,13 +1,12 @@
-import React from "react";
-import { Button, Checkbox, Form, Input } from "antd";
+import { Button, Form, Input } from "antd";
 import { Data } from "../data";
 import { useNavigate } from "react-router-dom";
-
 import "./style.css";
 
 export const Login = () => {
   const navigate = useNavigate();
   const [form] = Form.useForm();
+
   const onFinish = (values: any) => {
     var success = false;
     Data.users.forEach((user) => {
@@ -20,6 +19,8 @@ export const Login = () => {
     });
 
     if (success) {
+      //dispatch(login(values));
+      //localStorage.setItem("User", JSON.stringify(values));
       navigate("/home");
     } else {
       form.resetFields();
